@@ -1018,9 +1018,9 @@ dependencies = [
  "anyhow",
  "clap",
  "futures",
- "nest-core",
- "nest-crdt",
- "nest-protocol",
+ "nest-core 0.1.0 (git+https://github.com/soukadao/nest-core?branch=main)",
+ "nest-crdt 0.1.0 (git+https://github.com/soukadao/nest-crdt?branch=main)",
+ "nest-protocol 0.1.0 (git+https://github.com/soukadao/nest-protocol?branch=main)",
  "serde_json",
  "tokio",
  "tokio-tungstenite 0.26.2",
@@ -1034,12 +1034,28 @@ dependencies = [
  "chrono",
  "flate2",
  "hex",
- "nest-crdt",
- "nest-protocol",
+ "nest-crdt 0.1.0 (git+https://github.com/soukadao/nest-crdt?branch=main)",
+ "nest-protocol 0.1.0 (git+https://github.com/soukadao/nest-protocol?branch=main)",
  "serde",
  "serde_json",
  "sha2",
  "tempfile",
+]
+
+[[package]]
+name = "nest-core"
+version = "0.1.0"
+source = "git+https://github.com/soukadao/nest-core?branch=main#ff81637a325053c8bf52f3836aa07a1183542a8e"
+dependencies = [
+ "anyhow",
+ "chrono",
+ "flate2",
+ "hex",
+ "nest-crdt 0.1.0 (git+https://github.com/soukadao/nest-crdt?branch=main)",
+ "nest-protocol 0.1.0 (git+https://github.com/soukadao/nest-protocol?branch=main)",
+ "serde",
+ "serde_json",
+ "sha2",
 ]
 
 [[package]]
@@ -1051,10 +1067,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "nest-crdt"
+version = "0.1.0"
+source = "git+https://github.com/soukadao/nest-crdt?branch=main#1a5461da629ec365c160cdf4adeb91769faa7f41"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "nest-protocol"
 version = "0.1.0"
 dependencies = [
- "nest-crdt",
+ "nest-crdt 0.1.0 (git+https://github.com/soukadao/nest-crdt?branch=main)",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "nest-protocol"
+version = "0.1.0"
+source = "git+https://github.com/soukadao/nest-protocol?branch=main#7b605f8a93d8bde1ef26d8bad7bef833858d1430"
+dependencies = [
+ "nest-crdt 0.1.0 (git+https://github.com/soukadao/nest-crdt?branch=main)",
  "serde",
  "serde_json",
 ]
@@ -1066,9 +1101,9 @@ dependencies = [
  "anyhow",
  "axum",
  "futures",
- "nest-core",
- "nest-crdt",
- "nest-protocol",
+ "nest-core 0.1.0 (git+https://github.com/soukadao/nest-core?branch=main)",
+ "nest-crdt 0.1.0 (git+https://github.com/soukadao/nest-crdt?branch=main)",
+ "nest-protocol 0.1.0 (git+https://github.com/soukadao/nest-protocol?branch=main)",
  "serde",
  "serde_json",
  "tokio",
