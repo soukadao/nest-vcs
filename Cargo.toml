@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = [
+    "nest-crdt",
+    "nest-protocol",
+    "nest-core",
+    "nest-cli",
+    "nest-server",
+    "nest-ui",
+]

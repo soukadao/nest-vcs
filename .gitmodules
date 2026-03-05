@@ -1,0 +1,15 @@
+[submodule "nest-cli"]
+	path = nest-cli
+	url = https://github.com/soukadao/nest-cli.git
+[submodule "nest-core"]
+	path = nest-core
+	url = https://github.com/soukadao/nest-core.git
+[submodule "nest-server"]
+	path = nest-server
+	url = https://github.com/soukadao/nest-server.git
+[submodule "nest-protocol"]
+	path = nest-protocol
+	url = https://github.com/soukadao/nest-protocol.git
+[submodule "nest-crdt"]
+	path = nest-crdt
+	url = https://github.com/soukadao/nest-crdt.git
