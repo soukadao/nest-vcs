@@ -46,7 +46,7 @@ nest-ui          Web UI (GitHub 的な画面)
 | `nest init [path] --user <name>` | リポジトリを初期化（`.nest/` を作成） |
 | `nest status` | 現在のブランチとユーザーを表示 |
 | `nest log` | Snapshot 履歴を表示 |
-| `nest diff [from] [to]` | Snapshot 間の差分を表示 *(未実装)* |
+| `nest diff [from] [to]` | Snapshot 間の差分を表示 |
 | `nest record` | ファイル変更を検出し CRDT 操作として記録 |
 
 ### ブランチ
@@ -78,8 +78,13 @@ nest-ui          Web UI (GitHub 的な画面)
 
 | コマンド | 説明 |
 |---------|------|
-| `nest review create "<title>" --source <branch> --target <branch>` | Review を作成 *(スタブ)* |
-| `nest review list` | Review 一覧 *(スタブ)* |
+| `nest review create "<title>" --source <branch> --target <branch>` | Review を作成 |
+| `nest review list` | Review 一覧 |
+| `nest review show <id>` | Review 詳細 |
+| `nest review approve <id>` | Review を承認 |
+| `nest review close <id>` | Review をクローズ |
+| `nest review comment <id> "<body>"` | Review にコメント |
+| `nest review merge <id>` | Review をマージ（ソースブランチの変更をターゲットに統合） |
 
 ### Document
 
@@ -97,7 +102,7 @@ nest-ui          Web UI (GitHub 的な画面)
 | `nest remote add <name> <url>` | リモートを追加 |
 | `nest remote list` | リモート一覧 |
 | `nest remote remove <name>` | リモートを削除 |
-| `nest sync [remote]` | リモートと同期 *(未実装)* |
+| `nest sync [remote]` | リモートと同期 |
 
 ## サーバー
 
@@ -363,7 +368,7 @@ nest doc edit doc-1
 | Remote (add, list, remove) | ✅ 完了 |
 | REST API サーバー | ✅ 完了 |
 | WebSocket ハンドラ | ✅ 完了 |
-| Diff (snapshot 間差分) | 🚧 未実装 |
-| Review (create, list, approve, merge) | 🚧 スタブ |
-| Sync (WebSocket 同期クライアント) | 🚧 未実装 |
+| Diff (snapshot 間差分) | ✅ 完了 |
+| Review (create, list, show, approve, close, comment, merge) | ✅ 完了 |
+| Sync (WebSocket 同期クライアント) | ✅ 完了 |
 | Web UI | 🚧 スケルトン |
